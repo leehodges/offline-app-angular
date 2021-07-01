@@ -1,2 +1,2 @@
-<h1>My Posts</h1>
-<app-post *ngFor="let post of posts" [content]="post.body" [title]="post.title"></app-post>
+<h1 style="text-align:center;">Now Playing</h1>
+<app-post *ngFor="let post of posts" [content]="post.overview" [title]="post.original_title" [poster]="post.poster_path"></app-post>

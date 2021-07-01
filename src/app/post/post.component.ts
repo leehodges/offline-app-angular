@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class PostComponent {
   @Input() title: string;
   @Input() content: string;
+  @Input() poster: string;
 }

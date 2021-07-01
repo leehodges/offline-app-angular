@@ -29,7 +29,7 @@
     {
       "name": "posts",
       "urls": [
-        "https://jsonplaceholder.typicode.com/posts"
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=e87d04bb91f28a1bb981bd4236e09b48&language=en-US&page=1"
       ],
       "cacheConfig": {
         "maxSize": 5,
