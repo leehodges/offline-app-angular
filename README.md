@@ -1,27 +1,28 @@
-# AngularPwa
+# View Movies Offline
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+Run npm i
 
-## Development server
+## install http server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm install -g http-server 
 
-## Code scaffolding
+## setup for offline caching 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+run ng build --prod
 
-## Build
+## get into correct directory
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+cd dist/angular-pwa
 
-## Running unit tests
+## start your http-server to test
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+http-server -p 8081
 
-## Running end-to-end tests
+## test if it works offline
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+open your browser to localhost:8081 Inspectand go to Application, underneath Application go to Service Workers, click Offline and refresh the page. You should still have a list of movies now playing when you refresh. 
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Why would you want an app to run offline?!?!??!
+
+Well think of an information display kiosk? They look pretty crappy when a business loses their internet connection temporarily. If they had an app that supported offline mode, customers looking at the Kiosk could still see the information they need, and not an error page. 
